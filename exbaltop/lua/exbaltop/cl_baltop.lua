@@ -1,3 +1,7 @@
+-- exBaltop - A DarkRP addon for Garry's Mod
+-- Copyright (c) 2024 exliipso
+-- This work is licensed under CC BY-NC 4.0 http://creativecommons.org/licenses/by-nc/4.0/
+
 local function formatMoney(amount)
     local k
     while true do  
