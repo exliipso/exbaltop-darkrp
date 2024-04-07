@@ -27,19 +27,28 @@ Example configuration snippet:
 
 ```lua
 exBaltopConfig = {
-    UseMySQL = false,
-    DisplayCount = 3,
-    Colors = {
-        Header = Color(255, 215, 0),
-        Rank = Color(255, 255, 255),
-        Name = Color(0, 191, 255),
-        Money = Color(50, 205, 50),
-        Border = Color(255, 69, 0)
+    UseMySQL = false,  -- Toggle this to true to use MySQL.
+    MySQL = {
+        Hostname = "your_mysql_host",
+        Username = "your_username",
+        Password = "your_password",
+        Database = "your_database",
+        Port = 3306
     },
-    BorderEnabled = true,
-    BorderCharacter = "*",
-    BorderLength = 30
+    
+    DisplayCount = 3,  
+    Colors = {
+        Header = Color(252, 0, 88),  -- Color for the "Top N" header.
+        Rank = Color(255, 255, 255),  -- Color for the rank numbers.
+        Name = Color(255, 0, 225),  -- Color for player names.
+        Money = Color(0, 247, 49),  -- Color for money values.
+        Border = Color(143, 52, 235)  -- Color for the border.
+    },
+    BorderEnabled = true,  -- Enable or disable the border around the chat messages.
+    BorderCharacter = "*",  -- Character used to create the border.
+    BorderLength = 30  -- Length of the border, adjust as needed.
 }
+
 ```
 
 ## Installation
